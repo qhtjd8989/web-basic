@@ -1,0 +1,27 @@
+* { /* 전체선택자 */
+    font-size: 30px;
+}
+
+span { /* 타입선택자 */
+    color: red;
+}
+
+#sbject { /* id선택자는 앞에 #을 넣어준다 */
+    color: blue !important;
+}
+
+.content { /* class선택자는 앞에 .을 넣어준다 */
+    color: pink;
+}
+
+.content {
+    color: brown;
+}
+
+.info-ip {
+    color: red;
+}
+
+.font-8 {
+font-size: 8px;
+}
