@@ -20,7 +20,7 @@
 }
 
 .box2 {
-    /* position: absolute; position: absolute를 쓰면 마진을 쓸 수 없다 */
+    /* position: absolute를 쓰면 마진을 쓸 수 없다 */
     position: relative;
     bottom: 0;
     margin: 0 auto;
