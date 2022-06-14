@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1100px;
+    background-color: #dadada;
+}
+
+aside {
+    /* %를 쓰면 좋은 경우: 해상도에 따라 자동으로 크기가 맞춰짐 */
+    position: fixed;
+    right: 10px;
+    top: 18%;
+    width: 150px;
+    height: 600px;
+    background-color: pink;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+    height: 200px;
+    background-color: rgb(253, 250, 69);
+}
+
+nav ul{
+    /* space-around, space-between의 차이
+    space-around : 동일한 여백으로 배치
+    space-between : 좌우 끝으로 정렬한다*/
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+
+main {
+    height: 1000px;
+    background-color: #f83d3d;
+}
+
+footer {
+    height: 400px;
+    background-color: #141414;
+}
