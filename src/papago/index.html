@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papago</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- 공통되는 css는 style폴더에 캐스케이딩 때문에 index파일 위쪽에 옴 -->
+    <link rel="stylesheet" href="css/style.css"> <!-- 공통되는 css는 style폴더에 작성, 캐스케이딩 때문에 index파일 위쪽에 옴 -->
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -21,49 +21,94 @@
         </header>
         <main>
             <div class="d-container">
-                <div>
-                    <article>
-                        <div>
-                            <div>
+                <div class="article-container">
+                    <article class="article-left">
+                        <div class="article-header">
+                            <div class="article-header-left">
                                 <span>언어감지</span>
                                 <img src="images/index_items/combo_icon.PNG">
                             </div>
-                            <div>
+                            <div class="article-header-right">
                                 <img src="images/index_items/convert_icon.PNG">
                             </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="article-body">
+                            <div class="article-body-textarea">
                                 <textarea placeholder="번역할 내용을 입력하세요."></textarea>
                             </div>
-                            <div>
-                                <span>0</span><span> / 5000</span>
+                            <div class="article-body-count">
+                                <span>0&nbsp</span><span>/ 5000</span> <!-- html은 2개이상의 띄어쓰기가 되지 않음 -->
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <div>
+                        <div class="article-footer">
+                            <div class="article-footer-left">
+                                <div class="af-left-item">
                                     <img src="images/index_items/sound_icon.PNG">
                                 </div>
-                                <div>
+                                <div class="af-left-item">
                                     <img src="images/index_items/copy_icon.PNG">
                                 </div>
                             </div>
                             <button type="button">번역하기</button> <!-- 버튼을 사용할 때에는 type꼭 쓰기 -->
                         </div>
                     </article>
-                    <article>
-
+                    <article class="article-right">
+                        <div class="article-header">
+                            <div class="article-header-left">
+                                <span>영어</span>
+                                <img src="images/index_items/combo_icon_gray.PNG">
+                            </div>
+                        </div>
+                        <div class="article-body">
+                            <pre></pre>
+                        </div>
+                        <div class="article-footer">
+                            <div class="article-footer-left">
+                                <div class="af-left-item">
+                                    <img src="images/index_items/sound_icon_gray.PNG">
+                                </div>
+                                <div class="af-left-item">
+                                    <img src="images/index_items/copy_icon_gray.PNG">
+                                </div>
+                                <div class="af-left-item">
+                                    <img src="images/index_items/star_icon_gray.PNG">
+                                </div>
+                                <div class="af-left-item">
+                                    <img src="images/index_items/sharing_icon_gray.PNG">
+                                </div>
+                            </div>
+                        </div>
                     </article>
                 </div>
-                <div>
-                    <section></section>
-                    <section></section>
+                <div class="d-flex-column">
+                    <section class="section-top">
+                        <img src="images/index_items/auto_completion.PNG">
+                    </section>
+                    <section class="section-bottom">
+                        <div class="label-url">
+                            <label for="">웹사이트 번역</label>
+                        </div>
+                        <div class="input-url">
+                            <input type="url" placeholder="URL을 입력하세요">
+                            <div class="input-select-convert">
+                                <span>한국어로 번역</span>
+                                <img src="images/index_items/combo_icon.PNG">
+                            </div>
+                        </div>
+                        <div class="button-url">
+                            <button><img src="images/index_items/right_arrow_icon.PNG"></button>
+                        </div>
+                    </section>
                 </div>
             </div>
         </main>
-        <footer>
-
+        <footer >
+            <div class="d-container">
+                <img src="images/index_footer/footer1.PNG" >
+            </div>
+            <div class="d-container">
+                <img src="images/index_footer/footer2.PNG" >
+            </div>
         </footer>
     </div>
 </body>

@@ -1,0 +1,158 @@
+:root{ /* 변수화 */
+    --main-color: rgb(221, 221, 221);
+    --article-border-color: rgb(231, 231, 231);
+    --sub-font-color: rgb(201, 201, 201);
+}
+
+.d-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header */
+header {
+    display: flex;
+    padding: 15px 32px;
+    align-items: center;
+    border-bottom: 1px solid var(--main-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+}
+
+nav img {
+    margin: 0;
+}
+
+/* main */
+
+.article-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1280px; 
+}
+
+.article-right {
+    background-color: rgb(253, 253, 253);
+}
+
+.article-container article {
+    border: 1px solid var(--main-color);
+}
+
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid var(--article-border-color);
+
+    width: 630px;
+}
+
+.article-header-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 110px;
+    height: 59px;
+}
+
+.article-header-left span {
+    font-size: 18px;
+}
+
+.article-header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 64px;
+    height: 60px;
+}
+
+.article-body {
+    position: relative;
+    
+    border-bottom: 1px solid var(--article-border-color);
+    padding: 28px 20px 63px;
+
+    width: 630px;
+}
+
+.article-body-textarea {
+    width: 630px;
+    height: 219px;
+}
+
+.article-body-textarea textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    
+    width: 590px;
+    height: 100%;
+    
+    font-size: 40px;
+}
+
+pre {
+    height: 219px;
+}
+
+.article-body-count {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+}
+
+.article-body-count span {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--sub-font-color);
+}
+
+.af-left-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-right: 1px solid var(--article-border-color);
+
+    width: 90px;
+    height: 72px;
+}
+
+.article-footer {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 630px;
+}
+
+.article-footer-left {
+    display: flex;
+}
+
+.article-footer button {
+    border: 1px solid rgb(0, 197, 0);
+   
+    width: 144px;
+    height: 74px;
+   
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+   
+    background-color: #21dc6d;
+}
