@@ -15,7 +15,8 @@
 		var now = new Date();
 
 		function inntext(){
-			document.getElementById("current").innerText = now;
+			document.getElementById("current").innerText = "<em>" + now + "</em>";
+			//  innerText는 안에 텍스트가 포함 되어 있으면 텍스트로 출력
 		}
 		function innhtml() {
 			document.getElementById("current").innerHTML = "<em>" + now + "</em>";
