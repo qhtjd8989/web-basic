@@ -20,6 +20,10 @@ header {
     border-bottom: 1px solid var(--main-color);
 }
 
+.brand-logo-border {
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -70,6 +74,8 @@ nav img {
 
 .article-header-left span {
     font-size: 18px;
+
+    cursor: pointer;
 }
 
 .article-header-right {
@@ -79,6 +85,8 @@ nav img {
 
     width: 64px;
     height: 60px;
+    
+    cursor: pointer;
 }
 
 .article-body {
@@ -157,6 +165,8 @@ pre {
     color: white;
    
     background-color: #21dc6d;
+
+    cursor: pointer;
 }
 
 .section-container {
@@ -233,6 +243,8 @@ pre {
     background-color: white;
 
     overflow: hidden;
+
+    cursor: pointer;
 }
 
 footer {

@@ -6,36 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .test {
-            display: flex;
-            align-items: center;
-        }
+        div {
+            position: relative;
 
-        .test span:hover{
-            color: blue;
-            text-decoration: underline;
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
         }
+        span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
 
-        details summary ul {
-            overflow: hidden;
+            color: black;
+
         }
     </style>
 </head>
 <body>
-    <details>
-        <summary>asd</summary>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-        </ul>
-    </details>
-    asd
-    asd
-    asd
-    asd
-    asd
-    
+    <div>
+        <span>asdasd</span>
+    </div>
+    <input type="checkbox" style=" background-color: red;">
 </body>
 </html>

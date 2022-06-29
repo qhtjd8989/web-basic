@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="h-mn">
-                        <a href="#">Pulls</a>
+                        <a href="#">Pull requests</a>
                         <a href="#">Issues</a>
                         <a href="#">Marketplace</a>
                         <a href="#">Explore</a>
@@ -36,128 +36,158 @@
             
         </header>
         <main>
-            <div>
-                <div class="1">
-                    <div>
-                        <h1>Create a new repository</h1>
-                    </div>
-                    <div>
-                        A repository contains all project files, including the revision history. Already have a project repository elsewhere?
-                        <a href="#">Import a repository.</a>
-                    </div>
-                </div>
-                <div class="2">
-                    <div class="2-1">
-                        <span>Owner *</span>
-                        <span>Repository name *</span>
-                    </div>
-                    <div class="2-2">
-                        <div>
-                            <img src="images/main/id-icon.PNG" alt="">
-                            <label for="user"></label>
-                            <select name="" id="user">
-                                <option value="#">asd</option>
-                                <option value="#">asd1</option>
-                                <option value="#">asd2</option>
-                            </select>
+            <div class="main-container">
+                <div class="section-container">
+                    <div class="m1">
+                        <div class="m1-1">
+                            <h1>Create a new repository</h1>
                         </div>
-                        <div>
+                        <div class="m1-2">
+                            <span class="text1">A repository contains all project files, including the revision history. Already have a project repository elsewhere?</span>
+                            <a href="#" class="text2">Import a repository.</a>
+                        </div>
+                    </div>
+                    <div class="m2">
+                        <div class="m2-1">
+                            <div class="m2-1-left">
+                                <span class="text3 af-star">Owner</span>
+                                <div class="m2-1-left-box">
+                                    <img src="images/main/id-icon.PNG" alt="">
+                                    <label for="user"></label>
+                                        <select name="" id="user">
+                                            <option value="#">qhtjd8989</option>
+                                            <option value="#">asd1</option>
+                                            <option value="#">asd2</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <div class="m2-1-center">
+                                <span>/</span>
+                            </div>
+                            <div class="m2-1-right">
+                                <span class="text3 af-star">Repository name</span>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="m2-2">
+                            Great repository names are short and memorable. Need inspiration? How about <span class="text-green"> probable-octo-fiesta</span>?
+                        </div>
+                        <div class="m2-3">
+                            <div>
+                                <span class="text3">Description</span>
+                                <span class="text4">(optional)</span>
+                            </div>
                             <input type="text">
                         </div>
                     </div>
-                    <div class="2-3">
-                        Great repository names are short and memorable. Need inspiration? How about <span> probable-octo-fiesta</span>?
-                    </div>
-                    <div class="2-4">
-                        <span>Description</span>
-                        <span>(optional)</span>
-                    </div>
-                    <div class="2-5">
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="3">
-                    <div class="3-1">
-                        <input type="radio">
-                        <img src="images/main/public.PNG">
-                        <div>
-                            <span>Public</span>
-                            <span>Anyone on the internet can see this repository. You choose who can commit.</span>
+                    <div class="m3">
+                        <div class="m3-1">
+                            <input type="radio" name="public">
+                            <div class="im-sp">
+                                <img src="images/main/public.PNG">
+                                <div class="span-box">
+                                    <span class="text3">Public</span>
+                                    <span class="text4">Anyone on the internet can see this repository. You choose who can commit.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m3-2">
+                            <input type="radio" name="public">
+                            <div class="im-sp">
+                                <img src="images/main/private.PNG">
+                                <div class="span-box">
+                                    <span class="text3">Private</span>
+                                    <span class="text4">You choose who can see and commit to this repository.</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="3-2">
-                        <input type="radio">
-                        <img src="images/main/private.PNG">
-                        <div>
-                            <span>Private</span>
-                            <span>You choose who can see and commit to this repository.</span>
+                    <div class="m4">
+                        <div class="m4-1">
+                            <span class="text3">Initialize this repository with:</span>
+                            <span class="text1">Skip this step if you’re importing an existing repository.</span>
+                        </div>
+                        <div class="m4-2">
+                            <div class="m4-2-box1">
+                                <input type="checkbox" id="chk1">
+                            </div>
+                            <div class="m4-2-box2">
+                                <span class="text3">Add a README file</span>
+                                <span class="text4">
+                                    This is where you can write a long description for your project. 
+                                    <a href="#" class="text2">Learn more.</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="m4-3">
+                            <span class="text3">Add .gitignore</span>
+                            <span class="text4">
+                                Choose which files not to track from a list of templates.
+                                <a href="#" class="text2">Learn more.</a>
+                            </span>
+                            <div class="m4-3-template">
+                                <label for="template"></label>
+                                <select name="" id="template">
+                                    <option value="#">.gitignore template :None</option>
+                                    <option value="#">c++</option>
+                                    <option value="#">java</option>
+                                    <option value="#">python</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="m4-4">
+                            <span class="text3">Choose a license</span>
+                            <span class="text4">
+                                A license tells others what they can and can't do with your code.
+                                <a href="#" class="text2">Learn more.</a>
+                            </span>
+                            <div class="m4-3-template">
+                                <label for="Liscnse"></label>
+                                <select name="" id="Liscnse">
+                                    <option value="#">Liscnse: None</option>
+                                    <option value="#">None</option>
+                                    <option value="#">Apache License 2.0</option>
+                                    <option value="#">GNU</option>
+                                </select>
+                            </div>
+                            
                         </div>
                     </div>
-                </div>
-                <div class="4">
-                    <div class="4-1">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="4-2">
-                        <input type="checkbox" id="chk1">
-                        <div>
-                            <span>Add a README file</span>
-                            <span></span>
+                    <div class="m5">
+                        <div class="m5-1">
+                            <img src="images/main/Exclamation mark.PNG" alt="">
+                            <span class="text1">You are creating a public repository in your personal account.</span>
                         </div>
                     </div>
-                    <div class="4-3">
-                        <span></span>
-                        <span></span>
-                        <select name="" id="">
-                            <option value="#">c++</option>
-                            <option value="#">java</option>
-                            <option value="#">python</option>
-                        </select>
+                    <div class="m6">
+                        <button type="button">Create repository</button>
                     </div>
-                    <div class="4-4">
-                        <span></span>
-                        <span></span>
-                        <select name="" id="">
-                            <option value="#">None</option>
-                            <option value="#">Apache License 2.0</option>
-                            <option value="#">GNU</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="5">
-                    <div class="5-1">
-                        <img src="images/main/Exclamation mark.PNG" alt="">
-                        <span>You are creating a public repository in your personal account.</span>
-                    </div>
-                </div>
-                <div class="6">
-                    <button type="button">Create repository</button>
                 </div>
             </div>
         </main>
         <footer>
-            <div>
-                <div>
+            <div class="f1">
+                <div class="f-logo">
                     <img src="images/footer/f-logo.PNG" alt="">
                 </div>
-                <div>
+                <div class="f_mn">
                     <ul>
-                        <li>Terms</li>
-                        <li>Privacy</li>
-                        <li>Security</li>
-                        <li>Status</li>
-                        <li>Docs</li>
-                        <li>Contact GitHub</li>
-                        <li>Pricing</li>
-                        <li>API</li>
-                        <li>Training</li>
-                        <li>Blog</li>
-                        <li>About</li>
+                        <li><a href="#" class="text2">Terms</a></li>
+                        <li><a href="#" class="text2">Privacy</a></li>
+                        <li><a href="#" class="text2">Security</a></li>
+                        <li><a href="#" class="text2">Status</a></li>
+                        <li><a href="#" class="text2">Docs</a></li>
+                        <li><a href="#" class="text2">Contact GitHub</a></li>
+                        <li><a href="#" class="text2">Pricing</a></li>
+                        <li><a href="#" class="text2">API</a></li>
+                        <li><a href="#" class="text2">Training</a></li>
+                        <li><a href="#" class="text2">Blog</a></li>
+                        <li><a href="#" class="text2">About</a></li>
                     </ul>
                 </div>
             </div>
-        </footer>  
+        </footer> 
+        <div class="blank-box"></div> 
     </div>
 </body>
 </html>
